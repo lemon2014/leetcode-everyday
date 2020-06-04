@@ -4,6 +4,8 @@ package org.lemon.leetcode.week1;
  * https://leetcode-cn.com/problems/symmetric-tree/
  * <p>
  * 对称二叉树, 使用广度优先, 依次遍历, 最后的叶子节点判断 中序和后序相等即可
+ *
+ * 使用镜像的方式
  */
 public class Solution101 {
 

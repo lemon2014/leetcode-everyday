@@ -19,6 +19,11 @@ public class Solution0029 {
      * @return
      */
     public int[] spiralOrder(int[][] matrix) {
+
+        if (matrix.length == 0) {
+            return new int[0];
+        }
+
         int left = 0, right = matrix[0].length - 1, top = 0, bottom = matrix.length - 1, index = 0;
         int[] res = new int[(right + 1) * (bottom + 1)];
         while (true) {
@@ -58,10 +63,10 @@ public class Solution0029 {
     }
 
     public static void main(String[] args) {
-        int[][] temp = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+        int[][] temp = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         Solution0029 solution0029 = new Solution0029();
         int[] res = solution0029.spiralOrder(temp);
-        for(int i : res){
+        for (int i : res) {
             System.out.println(i);
         }
     }
